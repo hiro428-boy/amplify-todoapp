@@ -4,6 +4,7 @@ import "./App.css";
 import { API, graphqlOperation } from "aws-amplify";
 import { createTodo } from "./graphql/mutations";
 import { listTodos } from "./graphql/queries";
+import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react-v1";
 
 const styles = {
   container: {
@@ -93,8 +94,9 @@ function App() {
           <p style={styles.todoDescription}>{todo.description}</p>
         </div>
       ))}
+      <AmplifySignOut />
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);

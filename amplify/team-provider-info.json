@@ -10,6 +10,17 @@
       "StackName": "amplify-amplifytodoapp-dev-183730",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:905495266752:stack/amplify-amplifytodoapp-dev-183730/a98b0ea0-c60d-11ec-ab11-0aa458d5c36d",
       "AmplifyAppId": "dibjt1jm4cz29"
+    },
+    "categories": {
+      "auth": {
+        "amplifytodoapp19f6f998": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dibjt1jm4cz29",
+          "type": "manual"
+        }
+      }
     }
   }
 }
